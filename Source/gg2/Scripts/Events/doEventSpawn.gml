@@ -34,6 +34,8 @@ if(spawner.object != -1) {
     spawner.object=-1;
 }
 
+spawner.current_weapon_id = spawner.next_weapon[spawner.class]
+
 global.paramPlayer = spawner;
 spawner.object = instance_create(spawnX,spawnY,character);
 global.paramPlayer = noone;

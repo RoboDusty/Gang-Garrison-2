@@ -51,6 +51,20 @@
     roundStats[REVENGE] = 0;
     roundStats[POINTS] = 0;
     
+    //weapon array
+    next_weapon[CLASS_SCOUT] = 5;
+    next_weapon[CLASS_SOLDIER] = 7;
+    next_weapon[CLASS_SNIPER] = 1;
+    next_weapon[CLASS_DEMOMAN] = 2;
+    next_weapon[CLASS_MEDIC] = 0;
+    next_weapon[CLASS_ENGINEER] = 6;
+    next_weapon[CLASS_HEAVY] = 3;
+    next_weapon[CLASS_SPY] = 9;
+    next_weapon[CLASS_PYRO] = 4;
+    next_weapon[CLASS_QUOTE] = 8;
+    
+    current_weapon_id = next_weapon[CLASS_SCOUT];
+    
     timesChangedCapLimit = 0;
     
     lastKnownx=0;

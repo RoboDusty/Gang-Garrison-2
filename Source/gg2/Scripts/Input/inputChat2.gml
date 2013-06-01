@@ -11,6 +11,7 @@ if (player.team != TEAM_SPECTATOR)
     
     if (instance_exists(BubbleMenuZ)) with (BubbleMenuZ) instance_destroy();
     if (instance_exists(BubbleMenuC)) with (BubbleMenuC) instance_destroy();
+    if (instance_exists(WeaponMenuV)) with (WeaponMenuV) instance_destroy();
     if (instance_exists(BubbleMenuX))
     {
         BubbleMenuX.done = true;

@@ -19,11 +19,14 @@
     if (other.shieldHp &gt; 0)
     {
         other.shieldHp -= other.maxShieldHp/3;
+        if(kritzed){
+            other.shieldHp -= other.maxShieldHp/3;
+        }
         if other.shieldHp &lt; 0 { other.shieldHp = 0; }
     }
     else
     {
-        other.hp -= 72;
+        other.hp -= genDamage;
     }
     
     

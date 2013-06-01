@@ -73,9 +73,7 @@
                             }
                         }
                     } else if(ubering == true){
-                        if healTarget.object.ubered == 0 playsound(x,y,UberStartSnd);
-                        healTarget.object.ubered = 1;
-                        healTarget.object.alarm[2] = 3; 
+                        with(healTarget.object){condSet(COND_MEDIUBER,3);}
                     }
                                                                
                     if hphealed &gt;= HP_PER_POINT {

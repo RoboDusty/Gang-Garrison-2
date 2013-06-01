@@ -32,6 +32,7 @@
     taunting = false;
     doublejumpUsed = 0;
     ubered = 0;
+    kritzed = 0;
     stabbing = 0;
     onCabinet = 0;
     timeUnscathed = 0;
@@ -121,9 +122,13 @@
     controlFactor = baseControl;
     frictionFactor = baseFriction;
     
+    //Condition addition
+    conditions[COND_MEDIUBER] = 0;
+    conditions[COND_MEDIKRITZ] = 0;
+    
     // Let's spawn our weapon
     global.paramOwner = id;
-    currentWeapon = instance_create(x,y,weapons[0]);
+    currentWeapon = instance_create(x,y,global.weapon_index[player.current_weapon_id]);
     global.paramOwner = noone;
 }
 </argument>

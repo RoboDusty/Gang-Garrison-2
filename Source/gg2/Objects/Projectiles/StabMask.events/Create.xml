@@ -19,6 +19,9 @@
     playsound(x,y,KnifeSnd)
     numKills = 0;
     maxKills = 2;
+    alarm[4] = 1
+    genDamage = 72;
+    alarm[4] = 1;
 }
 </argument>
       </arguments>

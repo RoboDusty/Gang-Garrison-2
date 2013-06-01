@@ -28,6 +28,11 @@
         stats[POINTS] = read_ubyte(global.deserializeBuffer);
         rewards = read_ushort(global.deserializeBuffer);
     }
+    receiveCompleteMessage(global.serverSocket,11,global.deserializeBuffer);
+    for(i = 0; i &lt;= 9; i += 1){
+        next_weapon[i] = read_ubyte(global.deserializeBuffer);
+    }
+    current_weapon_id = read_ubyte(global.deserializeBuffer);
  
     var charObj, subobjects;
     receiveCompleteMessage(global.serverSocket,1,global.deserializeBuffer);

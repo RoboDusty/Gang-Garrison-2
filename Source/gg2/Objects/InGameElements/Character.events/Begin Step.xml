@@ -302,7 +302,25 @@ if(zone &gt;= 0 and !cloak)
     cappingPoint = zone.cp;
 else
     cappingPoint = noone;
-
+    
+condUpdate(global.maxConds)
+var lastUber, lastKritz;
+lastUber = ubered;
+lastKritz = kritzed;
+if(conditions[COND_MEDIUBER] &gt; 0){
+    ubered = 1;
+}else{
+    ubered = 0;
+}
+if(conditions[COND_MEDIKRITZ] &gt; 0){
+    kritzed = 1;
+}else{
+    kritzed = 0;
+}
+if((lastUber &amp;&amp; !ubered) || (lastKritz &amp;&amp; !kritzed)){
+    if(ubered = 1 || kritzed = 1) playsound(x,y,UberStartSnd);
+    if(ubered = 0 || kritzed = 0) playsound(x,y,UberEndSnd);
+}
 </argument>
       </arguments>
     </action>

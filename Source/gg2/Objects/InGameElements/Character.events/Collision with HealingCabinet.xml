@@ -29,8 +29,13 @@
         burnedBy = -1;
         afterburnSource = -1;
     }
-    //ammo stuffs
     if instance_exists(currentWeapon) {
+        //weapon stuffs
+        if(player.current_weapon_id != player.next_weapon[player.class]){
+            //show_message("wep swithc")
+            event_user(0)
+        }
+        //ammo stuffs
         if(currentWeapon.ammoCount &lt; currentWeapon.maxAmmo) {
             switch(currentWeapon.object_index) {
             case Medigun:

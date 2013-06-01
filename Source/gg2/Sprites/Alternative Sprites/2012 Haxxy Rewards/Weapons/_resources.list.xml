@@ -4,6 +4,7 @@
   <resource name="Reloading" type="GROUP"/>
   <resource name="Other" type="GROUP"/>
   <resource name="MedigunGoldS" type="RESOURCE"/>
+  <resource name="KritzMedigunGoldS" type="RESOURCE"/>
   <resource name="MinigunGoldS" type="RESOURCE"/>
   <resource name="MinegunGoldS" type="RESOURCE"/>
   <resource name="FlamethrowerGoldS" type="RESOURCE"/>

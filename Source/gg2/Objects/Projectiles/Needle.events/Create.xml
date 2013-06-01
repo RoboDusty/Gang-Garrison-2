@@ -17,6 +17,7 @@
     hitDamage = 4;
     lifetime = 40;
     alarm[0] = lifetime;
+    alarm[4] = 1;
 }
 </argument>
       </arguments>

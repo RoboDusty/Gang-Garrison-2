@@ -4,10 +4,12 @@
   <resource name="RocketlauncherFS" type="RESOURCE"/>
   <resource name="MinigunFS" type="RESOURCE"/>
   <resource name="RifleFS" type="RESOURCE"/>
+  <resource name="ClipperFS" type="RESOURCE"/>
   <resource name="MinegunFS" type="RESOURCE"/>
   <resource name="ShotgunFS" type="RESOURCE"/>
   <resource name="MedigunFS" type="RESOURCE"/>
   <resource name="ScattergunFS" type="RESOURCE"/>
   <resource name="FlamethrowerFS" type="RESOURCE"/>
   <resource name="BladeFS" type="RESOURCE"/>
+  <resource name="KritzMedigunFS" type="RESOURCE"/>
 </resources>

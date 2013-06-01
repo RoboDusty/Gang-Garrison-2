@@ -28,7 +28,11 @@
         write_ubyte(global.serializeBuffer, stats[BONUS]);
         write_ubyte(global.serializeBuffer, stats[POINTS]);
         write_ushort(global.serializeBuffer, rewards);
-    } 
+    }
+    for(i = 0; i &lt;= 9; i += 1){
+        write_ubyte(global.serializeBuffer, next_weapon[i]);
+    }
+    write_ubyte(global.serializeBuffer, current_weapon_id);
     
     subobjects=0;
     

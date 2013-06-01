@@ -92,9 +92,10 @@ while(commandLimitRemaining > 0) {
                             {
                                 var assistant;
                                 assistant = secondToLastDamageDealer;
-                                if (lastDamageDealer.object)
-                                    if (lastDamageDealer.object.healer)
-                                        assistant = lastDamageDealer.object.healer;
+                                if(lastDamageDealer != noone)
+                                    if (lastDamageDealer.object)
+                                        if (lastDamageDealer.object.healer)
+                                            assistant = lastDamageDealer.object.healer;
                                 sendEventPlayerDeath(player, lastDamageDealer, assistant, FINISHED_OFF);
                                 doEventPlayerDeath(player, lastDamageDealer, assistant, FINISHED_OFF);
                             }
@@ -184,6 +185,19 @@ while(commandLimitRemaining > 0) {
             write_ubyte(global.sendBuffer, bubbleImage);
             
             setChatBubble(player, bubbleImage);
+            break;
+            
+        case WEAPON_SELECT:
+            var class_c, weapon_c;
+            class_c = read_ubyte(socket);
+            weapon_c = read_ubyte(socket);
+            
+            write_ubyte(global.sendBuffer, WEAPON_SELECT);
+            write_ubyte(global.sendBuffer, playerId);
+            write_ubyte(global.sendBuffer, class_c);
+            write_ubyte(global.sendBuffer, weapon_c);
+            
+            player.next_weapon[class_c] = weapon_c
             break;
             
         case BUILD_SENTRY:
@@ -349,3 +363,4 @@ while(commandLimitRemaining > 0) {
         break;
     } 
 }
+

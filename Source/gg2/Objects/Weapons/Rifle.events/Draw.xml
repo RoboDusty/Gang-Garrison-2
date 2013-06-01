@@ -22,10 +22,17 @@ if (tracerAlpha &gt; 0.05)
     depth = -2;
     
     draw_set_alpha(tracerAlpha);
-    if(owner.team == TEAM_RED)
-        draw_line_width_color(shotx,shoty,x2,y2,2,c_red,c_red);
+    if(owner.kritzed){
+        if(owner.team == TEAM_RED)
+            draw_line_width_color(shotx,shoty,x2,y2,3,c_orange,c_orange);
     else
-        draw_line_width_color(shotx,shoty,x2,y2,2,c_blue,c_blue);
+            draw_line_width_color(shotx,shoty,x2,y2,3,c_aqua,c_aqua);
+    }else{
+        if(owner.team == TEAM_RED)
+            draw_line_width_color(shotx,shoty,x2,y2,2,c_red,c_red);
+        else
+            draw_line_width_color(shotx,shoty,x2,y2,2,c_blue,c_blue);
+    }
     if(global.particles != PARTICLES_OFF)
         tracerAlpha /= 1.75;
     else tracerAlpha = 0;
@@ -46,6 +53,7 @@ if (owner.zoomed &amp;&amp; owner == global.myself.object)
     }
     else
         draw_sprite_ext(FullChargeS, 0, mouse_x + 65*-image_xscale, mouse_y, 1, 1, 0, c_white, image_alpha);
+        
         draw_sprite_part_ext(ChargeS, 1, 0, 0, ceil((hitDamage)*40/maxDamage), 20, mouse_x + 15*-image_xscale, mouse_y - 10, -image_xscale, 1, c_white, image_alpha);
 }
 

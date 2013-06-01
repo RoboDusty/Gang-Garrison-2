@@ -23,7 +23,7 @@ if (alarm[6] &lt;= 0){
 } else {
     //Play the current animation normally
     var animLength;
-    if (object_index != Rifle)
+    if (object_index != Rifle) &amp;&amp; (object_index != ClipperRifle)
         animLength = recoilAnimLength;
     else if (sprite_index == recoilSprite)
         animLength = recoilAnimLength;
@@ -46,6 +46,13 @@ if (!owner.invisible and !owner.taunting and !owner.omnomnomnom and !owner.playe
         else if (owner.team == TEAM_BLUE)
             ubercolour = c_blue;
         draw_sprite_ext(sprite_index, imageOffset, round(x+xoffset*image_xscale), round(y+yoffset), image_xscale, image_yscale, image_angle, ubercolour, 0.7*image_alpha);
+    }
+    if (owner.kritzed) {
+        if owner.team == TEAM_RED
+            ubercolour = c_orange;
+        else if owner.team == TEAM_BLUE
+            ubercolour = c_aqua;
+        draw_sprite_ext(sprite_index,imageOffset,round(x+xoffset*(image_xscale*1.5)),round(y+yoffset),image_xscale*1.5,image_yscale*1.5,image_angle,ubercolour,0.7*image_alpha);
     }
 }
 </argument>

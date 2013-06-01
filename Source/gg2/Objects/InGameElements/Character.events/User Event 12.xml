@@ -25,12 +25,15 @@
         write_byte(global.serializeBuffer, vspeed*8.5);
         write_ubyte(global.serializeBuffer, ceil(hp));
         write_ubyte(global.serializeBuffer, currentWeapon.ammoCount);
+        for(i = 0; i &lt; global.maxConds; i += 1;){
+            write_ubyte(global.serializeBuffer, conditions[i]);
+        }
         
         temp = 0;
         if(cloak) temp |= $01;
         //allocate the next three bits of the byte for movestatus sync
         temp |= (moveStatus &amp; $07) &lt;&lt; 1;
-        write_ubyte(global.serializeBuffer, temp);               
+        write_ubyte(global.serializeBuffer, temp);              
     }
    
 

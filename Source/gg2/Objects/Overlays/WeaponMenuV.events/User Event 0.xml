@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="10">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">    if(not done) {
+        //if(!global.isHost){
+            write_ubyte(global.serverSocket, WEAPON_SELECT);
+            write_ubyte(global.serverSocket, class_select);
+            write_ubyte(global.serverSocket, weapon_select);
+            //show_message("tried sending weapon change to server")
+        if(global.isHost){
+            global.myself.next_weapon[class_select] = weapon_select;
+        }
+    }
+    done = true;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

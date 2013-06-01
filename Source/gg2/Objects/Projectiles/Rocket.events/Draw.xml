@@ -14,7 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">draw_sprite_ext(sprite_index,team,x,y,image_xscale,image_yscale,image_angle,c_white,image_alpha);
-
+if(kritzed){
+    draw_sprite_ext(sprite_index,team,x,y,image_xscale*1.5,image_yscale*1.5,image_angle,image_blend,0.7);
+}
 </argument>
       </arguments>
     </action>

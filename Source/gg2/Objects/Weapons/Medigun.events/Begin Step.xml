@@ -23,8 +23,7 @@
 }
 
 if(ubering) {
-    owner.ubered = 1;
-    owner.alarm[2]=3;
+    with(owner){condSet(COND_MEDIUBER,3);}
     uberCharge -= 25/3;
     if(uberCharge&lt;=0) {
         uberCharge = 0;

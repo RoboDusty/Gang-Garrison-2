@@ -2,6 +2,9 @@
 <resources>
   <resource name="BubbleMenuZS" type="RESOURCE"/>
   <resource name="BubbleMenuXS" type="RESOURCE"/>
-  <resource name="BubbleMenuCS" type="RESOURCE"/>
   <resource name="BubbleMenuX2S" type="RESOURCE"/>
+  <resource name="BubbleMenuCS" type="RESOURCE"/>
+  <resource name="WeaponMenuVS" type="RESOURCE"/>
+  <resource name="MedicWeaponMenuVS" type="RESOURCE"/>
+  <resource name="RifleWeaponMenuVS" type="RESOURCE"/>
 </resources>

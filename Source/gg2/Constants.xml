@@ -61,6 +61,7 @@
   <constant name="PLUGIN_PACKET" value="55"/>
   <constant name="KICK_BAD_PLUGIN_PACKET" value="56"/>
   <constant name="PING" value="57"/>
+  <constant name="WEAPON_SELECT" value="58"/>
   <constant name="TEAM_RED" value="0"/>
   <constant name="TEAM_BLUE" value="1"/>
   <constant name="TEAM_SPECTATOR" value="2"/>
@@ -150,4 +151,6 @@
   <constant name="MOUSE_RIGHT" value="9002"/>
   <constant name="HP_PER_POINT" value="400"/>
   <constant name="INTEL_MAX_TIMER" value="900"/>
+  <constant name="COND_MEDIUBER" value="0"/>
+  <constant name="COND_MEDIKRITZ" value="1"/>
 </constants>

@@ -24,6 +24,7 @@
     bubbled = false;
     reflector = noone;
     knockback = 10;
+    alarm[4] = 1;
 }
 </argument>
       </arguments>

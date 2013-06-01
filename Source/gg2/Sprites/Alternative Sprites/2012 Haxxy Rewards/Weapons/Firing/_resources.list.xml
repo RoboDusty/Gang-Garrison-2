@@ -7,6 +7,7 @@
   <resource name="MinegunGoldFS" type="RESOURCE"/>
   <resource name="ShotgunGoldFS" type="RESOURCE"/>
   <resource name="MedigunGoldFS" type="RESOURCE"/>
+  <resource name="KritzMedigunGoldFS" type="RESOURCE"/>
   <resource name="ScattergunGoldFS" type="RESOURCE"/>
   <resource name="FlamethrowerGoldFS" type="RESOURCE"/>
 </resources>

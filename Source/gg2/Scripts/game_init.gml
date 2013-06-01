@@ -381,12 +381,34 @@ global.launchMap = "";
     global.chat1 = ini_read_real("Controls", "chat1", ord("Z"));
     global.chat2 = ini_read_real("Controls", "chat2", ord("X"));
     global.chat3 = ini_read_real("Controls", "chat3", ord("C"));
+    global.weapV = ini_read_real("Controls", "weapV", ord("V"));
     global.medic = ini_read_real("Controls", "medic", ord("E"));
     global.drop = ini_read_real("Controls", "drop", ord("B"));
     global.changeTeam = ini_read_real("Controls", "changeTeam", ord("N"));
     global.changeClass = ini_read_real("Controls", "changeClass", ord("M"));
     global.showScores = ini_read_real("Controls", "showScores", vk_shift);
     ini_close();
+    
+    global.maxConds = 2;
+    
+    //-------------------------
+    //WEAPON INDEX DEFINITION
+    //-------------------------
+
+    global.weapon_index[0] = Medigun;
+    global.weapon_index[1] = Rifle;
+    global.weapon_index[2] = Minegun;
+    global.weapon_index[3] = Minigun;
+    global.weapon_index[4] = Flamethrower;
+    global.weapon_index[5] = Scattergun;
+    global.weapon_index[6] = Shotgun;
+    global.weapon_index[7] = Rocketlauncher;
+    global.weapon_index[8] = Blade;
+    global.weapon_index[9] = Revolver;
+    global.weapon_index[10] = KritzMedigun;
+    global.weapon_index[11] = ClipperRifle;
+
+    //-------------------------
     
     calculateMonthAndDay();
 

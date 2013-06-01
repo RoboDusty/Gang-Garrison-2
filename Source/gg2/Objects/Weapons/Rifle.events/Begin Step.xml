@@ -13,7 +13,14 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if(owner.zoomed and readyToShoot)
+        <argument kind="STRING">if(owner.kritzed){
+    dBoost = 2
+    maxDamage = 75*2
+}else{
+    dBoost = 1
+    maxDamage = 75
+}
+if(owner.zoomed and readyToShoot)
 {
     t += 1;
     if t &gt; chargeTime t = chargeTime;
@@ -21,9 +28,9 @@
 else
     t = 0;
 if(!owner.zoomed)
-    hitDamage = unscopedDamage;
+    hitDamage = unscopedDamage*dBoost;
 else
-    hitDamage = baseDamage + floor(sqrt(t/chargeTime)*(maxDamage-baseDamage));
+    hitDamage = (baseDamage + floor(sqrt(t/chargeTime)*((maxDamage)-baseDamage)));
 </argument>
       </arguments>
     </action>

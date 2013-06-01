@@ -50,4 +50,9 @@
   <resource name="toggleZoom" type="RESOURCE"/>
   <resource name="ds_list_sorted_insert" type="RESOURCE"/>
   <resource name="isBetaVersion" type="RESOURCE"/>
+  <resource name="condUpdate" type="RESOURCE"/>
+  <resource name="condSet" type="RESOURCE"/>
+  <resource name="condAdd" type="RESOURCE"/>
+  <resource name="condRemove" type="RESOURCE"/>
+  <resource name="condSetOverwrite" type="RESOURCE"/>
 </resources>

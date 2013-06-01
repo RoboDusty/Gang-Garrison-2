@@ -2,6 +2,7 @@
 <resources>
   <resource name="Medigun" type="RESOURCE"/>
   <resource name="Rifle" type="RESOURCE"/>
+  <resource name="ClipperRifle" type="RESOURCE"/>
   <resource name="Minegun" type="RESOURCE"/>
   <resource name="Minigun" type="RESOURCE"/>
   <resource name="Flamethrower" type="RESOURCE"/>
@@ -10,4 +11,5 @@
   <resource name="Rocketlauncher" type="RESOURCE"/>
   <resource name="Blade" type="RESOURCE"/>
   <resource name="Revolver" type="RESOURCE"/>
+  <resource name="KritzMedigun" type="RESOURCE"/>
 </resources>
